@@ -1,0 +1,35 @@
+.section {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 0;
+}
+
+.section h1 {
+    margin-bottom: 6px;
+}
+
+#img-blocob {
+    max-width: 100%;
+}
+
+#github {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 60%;
+}
+
+#github a {
+    color: rgb(19, 19, 19);
+}
+
+#github-logo {
+    width: 150px;
+}
+
+@media only screen and (max-width: 800px) {
+    .section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

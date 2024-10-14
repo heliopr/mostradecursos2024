@@ -1,0 +1,28 @@
+#section1 #logo-if {
+    width: 80px;
+}
+
+#bg1 {
+    background-image: url("/static/campus1.jpg");
+    background-position: center bottom;
+    filter: blur(3px);
+}
+
+#section2 {
+    padding: 60px 15%;
+}
+
+#section3 h1 {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    #section3 .section-row {
+        gap: 100px;
+    }
+
+    #section2 {
+        padding: 30px 10%;
+        margin-bottom: 20px;
+    }
+}

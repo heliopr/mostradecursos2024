@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Variables */
+:root {
+
+    
+    --size-small: 0.8em;
+    --size-normal: 1em;
+    --size-big: 1.2em;
+    --size-large: 1.4em;
+    --size-h1: 2.4em;
+    --size-h2: 2em;
+    --size-h3: 1.8em;
+}
+
+
+/* Tags */
+body {
+    font-family: "Inter", serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+p,a {font-size: var(--size-normal);}
+h1 {font-size: var(--size-h1);}
+h2 {font-size: var(--size-h2);}
+h3 {font-size: var(--size-h3);}
+
+hr {
+    height: 2px;
+    border: 0;
+    color: #333;
+    background-color: #333;
+}
+
+button {
+    font-family: "Inter", serif;
+    color: white;
+    font-size: var(--size-big);
+    font-weight: 600;
+    background-color: green;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px;
+    transition: 0.1s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 109, 0);
+}
+
+/* Classes */
+.size-h1 {font-size: var(--size-h1);}
+.size-h2 {font-size: var(--size-h2);}
+.size-h3 {font-size: var(--size-h3);}
+.size-small {font-size: var(--size-small);}
+.size-normal {font-size: var(--size-normal);}
+.size-big {font-size: var(--size-big);}
+.size-large {font-size: var(--size-large);}
+.bold {font-weight: bold;}
+
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+.text-justify {text-align: justify;}
+
+.flex {display: flex;}
+
+.justify-center {justify-content: center;}
+.justify-start {justify-content: end;}
+.justify-end {justify-content: start;}
+
+.align-center {align-items: center;}
+.align-start {align-items: end;}
+.align-end {align-items: start;}
+
+.section-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+.column {
+    flex-basis: 100%;
+}
+
+.column img {
+    width: 100%;
+}
+
+.section {
+    padding: 60px 10%;
+}
+
+.parallax {
+    position: relative;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 4% 8%;
+}
+
+.parallax-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.mega-title {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 4px 4px 4px black;
+    box-shadow: 4px 4px 8px black;
+    padding: 20px;
+    border: 4px solid;
+}
+
+
+/* Header & Footer */
+header {
+    
+    position: sticky;
+    top: 0;
+    width: 80%;
+    z-index: 255;
+    background-color: white;
+    
+    padding: 20px 10%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #marca {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+}
+
+header #marca #logo {
+    width: 60px;
+}
+
+header #marca #texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header #marca #texto p {
+    margin: 1px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: var(--size-large);
+}
+
+nav a:hover {
+    color: rgb(39, 39, 39);
+}
+
+
+footer {
+    padding: 50px 10%;
+    background-color: rgb(240, 240, 240);
+}
+
+footer #logo {
+    width: 80px;
+}
+
+
+/* Media */
+@media only screen and (max-width: 800px) {
+    .section {
+        padding-top: 30px;
+    }
+
+    .section-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section-row.mobile-reverse {
+        flex-direction: column-reverse;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: var(--size-normal);
+    }
+
+    .mega-title {
+        font-size: var(--size-h1);
+    }
+}
