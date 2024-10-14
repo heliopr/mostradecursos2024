@@ -172,6 +172,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+}
+
+header.active::after {
+    width: 100%;
 }
 
 header #marca {
@@ -197,6 +212,7 @@ header #marca #texto p {
 
 nav {
     display: flex;
+    position: relative;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -204,14 +220,29 @@ nav {
     gap: 20px;
 }
 
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10;
+    width: 100%;
+    height: 3px;
+    background-color: var(--after-color, white);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after{
+    transform: scaleX(1);
+}
+
 nav a {
+    position: relative;
     text-decoration: none;
     font-size: var(--size-large);
 }
 
-nav a:hover {
-    color: inherit;
-}
 
 
 footer {
@@ -247,7 +278,7 @@ footer #logo {
     }
 
     nav a {
-        font-size: var(--size-normal);
+        font-size: var(--size-small);
     }
 
     .mega-title {

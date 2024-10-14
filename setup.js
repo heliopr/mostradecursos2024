@@ -5,25 +5,39 @@ $(document).ready(() => {
 
         function changeHeaderBackground() {
             const yPosition = window.scrollY; 
-            const targetY = 750; 
-
+            const targetY = window.innerHeight * 0.75; 
             if (currentPage.includes("sobre")) { 
                 header.style.backgroundColor = 'white';
                 header.style.color = 'black';
+                header.classList.add('active');
+                changeNavAfterColor('black');
             } else {
                 if (yPosition >= targetY) {
                     header.style.background = 'linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1))';
                     header.style.color = 'black';
+                    header.classList.add('active');
+                    changeNavAfterColor('black');
                 } else {
                     header.style.background = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0))';
                     header.style.color = 'rgba(255, 255, 255, 1)';
+                    header.classList.remove('active');
+                    changeNavAfterColor('white');
                 }
             }
+        }
+
+        function changeNavAfterColor(color) {
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.style.setProperty('--after-color',color);
+            });
         }
 
         changeHeaderBackground();
         window.addEventListener('scroll', changeHeaderBackground);
     });
+
+    
 
     $("footer").load("/components/footer.html");
 
