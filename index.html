@@ -7,6 +7,8 @@
     <title>Mostra de Cursos 2024</title>
     <link rel="stylesheet" href="/globalstyle.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/setup.js"></script>
 </head>
@@ -23,11 +25,11 @@
         <div class="section section-row" id="section2">
             <div class="column">
                 <hr>
-                <h1>CIÊNCIA E TECNOLOGIA</h1>
+                <h1 class="title">CIÊNCIA E TECNOLOGIA</h1>
                 <p class="size-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat temporibus aspernatur exercitationem dolorum totam, iste vero ea sed qui voluptatum minus veritatis asperiores, tempore consequuntur animi numquam tenetur provident. Est.</p>
             </div>
             <div class="column">
-                <img class="column" src="/static/imagem1.jpg">
+                <img class="course-image" src="/static/imagem1.jpg">
             </div>
         </div>
 
@@ -35,14 +37,18 @@
             <h1>NOSSOS CURSOS</h1>
             <div class="section-row">
                 <div class="column">
-                    <img src="/static/imagem2.jpg">
-                    <h2>INFORMÁTICA</h2>
+                    <img class="course-image" src="/static/imagem2.jpg">
+                    <a href="informatica/index.html">
+                        <h2 class="title">INFORMÁTICA</h2>
+                    </a>
                     <p class="size-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat temporibus aspernatur exercitationem dolorum totam.</p>
                     <button onclick="window.location.href='/informatica'">Conferir Curso</button>
                 </div>
                 <div class="column">
-                    <img src="/static/imagem3.jpg">
-                    <h2>AGROECOLOGIA</h2>
+                    <img class="course-image" src="/static/imagem3.jpg">
+                    <a href="agroecologia/index.html">
+                        <h2 class="title">AGROECOLOGIA</h2>
+                    </a>
                     <p class="size-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat temporibus aspernatur exercitationem dolorum totam.</p>
                     <button onclick="window.location.href='/agroecologia'">Conferir Curso</button>
                 </div>
