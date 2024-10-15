@@ -1,4 +1,4 @@
 #bg1 {
-    background-image: url("static/informaticabanner.png");
+    background-image: url("/mostradecursos2024/static/informaticabanner.png");
     filter: blur(4px) grayscale(20%);
 }

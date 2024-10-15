@@ -3,7 +3,7 @@
 }
 
 #bg1 {
-    background-image: url("static/campus1.jpg");
+    background-image: url("/mostradecursos2024/static/campus1.jpg");
     background-position: center bottom;
     filter: blur(3px);
 }
