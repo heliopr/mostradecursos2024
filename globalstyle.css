@@ -90,8 +90,8 @@ button:hover {
 }
 
 .column {
-    overflow: hidden;  
     flex-basis: 100%;
+    max-width: 100%;
 }
 
 .column img {
@@ -100,12 +100,12 @@ button:hover {
     object-fit: cover;
 }
 
-.column h2 {
+.column .title {
     position: relative;
     display: inline-block;
 }
 
-.column h2::after {
+.column .title::after {
     content: '';
     position: absolute;
     left: 0;
@@ -117,7 +117,7 @@ button:hover {
 }
 
 
-.column:hover h2::after{
+.column:hover .title::after{
     width: 100%;
 }
 
@@ -157,6 +157,7 @@ button:hover {
     padding: 20px;
     border: 3.5px solid;
 }
+
 
 /* Header & Footer */
 header {
@@ -237,6 +238,7 @@ nav a {
     position: relative;
     text-decoration: none;
     font-size: var(--size-big);
+    font-weight: 600;
 }
 
 
