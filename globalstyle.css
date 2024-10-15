@@ -71,7 +71,9 @@ button:hover {
 .text-left {text-align: left;}
 .text-justify {text-align: justify;}
 
-.flex {display: flex;}
+.flex-column {display: flex; flex-direction: column;}
+.flex-row {display: flex; flex-direction: row;}
+.flex-strech {align-self: stretch;}
 
 .justify-center {justify-content: center;}
 .justify-start {justify-content: end;}
@@ -80,6 +82,8 @@ button:hover {
 .align-center {align-items: center;}
 .align-start {align-items: end;}
 .align-end {align-items: start;}
+
+.objfit-cover {object-fit: cover;}
 
 .section-row {
     display: flex;
@@ -94,7 +98,7 @@ button:hover {
     max-width: 100%;
 }
 
-.column img {
+.course-image {
     height: auto;
     width: 100%;
     object-fit: cover;
