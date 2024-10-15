@@ -1,12 +1,13 @@
 header{
     background-color: white;
     color: 'black';
+    position: sticky;
 }
 
 .section {
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 10%;
+    padding-top: 2%;
 }
 
 .section h1 {
