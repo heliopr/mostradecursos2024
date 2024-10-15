@@ -1,8 +1,4 @@
 $(document).ready(() => {
-    if (window.location.host === "heliopr.github.io") {
-        console.log("heheha")
-    }
-
     $("header").load("/components/header.html", () => {
         const header = document.querySelector('header');
         const currentPage = window.location.pathname; 
