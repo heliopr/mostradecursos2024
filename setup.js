@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $("header").load("/mostradecursos2024/components/header.html", () => {
+    $("header").load("/mostradecursos2024/components/header.txt", () => {
         const header = document.querySelector('header');
         const currentPage = window.location.pathname; 
 
@@ -39,7 +39,7 @@ $(document).ready(() => {
 
     
 
-    $("footer").load("/mostradecursos2024/components/footer.html");
+    $("footer").load("/mostradecursos2024/components/footer.txt");
 
     gsap.registerPlugin(ScrollTrigger);
 
