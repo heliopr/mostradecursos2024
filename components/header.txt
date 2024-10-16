@@ -13,7 +13,20 @@
 
 <nav>
     <a href="">Home</a>
-    <a href="informatica">Informática</a>
-    <a href="agroecologia">Agroecologia</a>
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Técnico</a>
+        <div class="dropdown-content">
+            <a href="/técnico/informatica/">Informática</a>
+            <a href="/técnico/agroecologia/">Agroecologia</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Superior</a>
+        <div class="dropdown-content">
+            <a href="/superior/agronomia/">Agronomia</a>
+            <a href="/superior/quimica/">Química</a>
+            <a href="/superior/tads/">TADS</a>
+        </div>
+    </div>
     <a href="sobre">Sobre</a>
 </nav>

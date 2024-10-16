@@ -1,0 +1,4 @@
+#bg1 {
+    background-image: url("/static/agronomiabanner.jpg");
+    filter: blur(4px);
+}
